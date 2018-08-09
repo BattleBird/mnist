@@ -67,4 +67,4 @@ Solution: sudo pip uninstall numpy
 
    python softmax_regression.py (accuracy:0.9078)
 
-   python convolutional.py (accuracy:)
+   python convolutional.py (accuracy:0.9919)
