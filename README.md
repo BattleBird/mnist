@@ -45,3 +45,4 @@ python convolutional.py
 - 只有通过会话（Session）才能计算出tf.Tensor 的值。强烈建议读者 在学习完tf.Tensor 和tf.Variable 后，阅读https://www.tensorflow.org/programmers_guide/graphs 中的内容，该文档描述了TensorFlow 中 计算图和会话的基本运行原理，对理解TensorFlow 的底层原理有很 大帮助。
 # mnist
 # mnist
+# mnist
