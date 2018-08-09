@@ -1,12 +1,14 @@
 # how to run?
 
-Open your terminal on Mac
+Open your terminal on Mac:
 
 cd Desktop
 
 mkdir MNIST
 
 cd MNIST
+
+git clone 
 
 
 
