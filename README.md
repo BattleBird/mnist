@@ -1,3 +1,14 @@
+# how to run?
+
+Open your terminal on Mac
+
+cd Desktop
+
+mkdir MNIST
+
+cd MNIST
+
+
 
 #### 拓展阅读
 
