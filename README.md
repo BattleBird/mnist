@@ -44,3 +44,4 @@ python convolutional.py
 - 常用tf.Variable 类来存储模型的参数， 读者可以参阅[https://www.tensorflow.org/programmers_guide/variables](https://www.tensorflow.org/programmers_guide/variables) 详细了解它的运行机制， 文档的中文版地址为http://www.tensorfly.cn/tfdoc/how_tos/ variables.html。
 - 只有通过会话（Session）才能计算出tf.Tensor 的值。强烈建议读者 在学习完tf.Tensor 和tf.Variable 后，阅读https://www.tensorflow.org/programmers_guide/graphs 中的内容，该文档描述了TensorFlow 中 计算图和会话的基本运行原理，对理解TensorFlow 的底层原理有很 大帮助。
 # mnist
+# mnist
