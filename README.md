@@ -1,5 +1,7 @@
 # how to run?
 
+# 1.seetings
+
 Open your terminal on Mac:
 
    cd Desktop
@@ -20,7 +22,8 @@ Open your terminal on Mac:
 *** [pylint] E0401:Unable to import 'tensorflow.examples.tutorials.mnist'
 
 Solution:open your VScode's settings, and then add  "python.pythonPath": "/Users/hangxu/Desktop/MNIST/bin/python" to your custom settings.
-
+   
+# 2.run *.py and solve some problems when running
 
 python download.py
 
