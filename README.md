@@ -8,14 +8,50 @@ mkdir MNIST
 
 cd MNIST
 
-git clone 
+git clone https://github.com/BattleBird/mnist
 
+code mnist
 
+virtualenv .
 
-#### 拓展阅读
+pip install tensorflow==1.4.0
 
-- 本章介绍的MNIST 数据集经常被用来检验机器学习模型的性能，在它的官网（地址：http://yann.lecun.com/exdb/mnist/ ）中，可以找到多达68 种模型在该数据集上的准确率数据，包括相应的论文出处。这些模型包括线性分类器、K 近邻方法、普通的神经网络、卷积神经网络等。
-- 本章的两个MNIST 程序实际上来自于TensorFlow 官方的两个新手教程，地址为https://www.tensorflow.org/get_started/mnist/beginners 和 https://www.tensorflow.org/get_started/mnist/pros 。读者可以将本书的内容和官方的教程对照起来进行阅读。这两个新手教程的中文版地址为http://www.tensorfly.cn/tfdoc/tutorials/mnist_beginners.html 和http://www.tensorfly.cn/tfdoc/tutorials/mnist_pros.html。
-- 本章简要介绍了TensorFlow 的tf.Tensor 类。tf.Tensor 类是TensorFlow的核心类，常用的占位符（tf.placeholder）、变量（tf.Variable）都可以看作特殊的Tensor。读者可以参阅https://www.tensorflow.org/programmers_guide/tensors 来更深入地学习它的原理。
-- 常用tf.Variable 类来存储模型的参数， 读者可以参阅[https://www.tensorflow.org/programmers_guide/variables](https://www.tensorflow.org/programmers_guide/variables) 详细了解它的运行机制， 文档的中文版地址为http://www.tensorfly.cn/tfdoc/how_tos/ variables.html。
-- 只有通过会话（Session）才能计算出tf.Tensor 的值。强烈建议读者 在学习完tf.Tensor 和tf.Variable 后，阅读https://www.tensorflow.org/programmers_guide/graphs 中的内容，该文档描述了TensorFlow 中 计算图和会话的基本运行原理，对理解TensorFlow 的底层原理有很 大帮助。
+*** [pylint] E0401:Unable to import 'tensorflow.examples.tutorials.mnist'
+
+Solution:open your VScode's settings, and then add  "python.pythonPath": "/Users/hangxu/Desktop/MNIST/bin/python" to your custom settings.
+
+python download.py
+
+*** cannot download train-images-idx3-ubyte.gz train-labels-idx1-ubyte.gz t10k-images-idx3-ubyte.gz t10k-labels-idx1-ubyte.gz to          MNIST_data/
+
+Solution: use Chrome(because other browers will uncompress these dataset) to open http://yann.lecun.com/exdb/mnist/ and download 4       dataset, then put them into MNIST_data/
+
+python download.py (again)
+
+python label.py
+
+python save.pic.py
+
+*** [pylint] E0401:Unable to import 'scipy.misc'
+
+Solution: pip install scipy
+
+python save.pic.py (again)
+
+*** 'module' object has no attribute 'toimage'
+
+Solution: pip install pillow
+
+python save.pic.py (again)
+
+*** RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+
+Reason: the versions of numpy and scipy don't match
+Solution: sudo pip uninstall numpy
+          sudo pip install numpy==1.14.5
+          
+python save.pic.py (again) That's OK, there is no warning.
+
+python softmax_regression.py (accuracy:0.9078)
+
+python convolutional.py (accuracy:)
