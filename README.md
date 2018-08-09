@@ -23,7 +23,7 @@ Open your terminal on Mac:
 
 Solution:open your VScode's settings, and then add  "python.pythonPath": "/Users/hangxu/Desktop/MNIST/bin/python" to your custom settings.
    
-# 2.run *.py and solve some problems when running
+#  2.run *.py and solve some problems when running
 
 python download.py
 
@@ -63,6 +63,7 @@ Solution: sudo pip uninstall numpy
           
           
    python save.pic.py (again) That's OK, there is no warning.
+# 3.run sofamax_regression.py and convolutional.py
 
    python softmax_regression.py (accuracy:0.9078)
 
