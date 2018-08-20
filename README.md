@@ -58,9 +58,8 @@ Solution: pip install pillow
 
 Reason: the versions of numpy and scipy don't match
 
-Solution: 
+Solution: sudo pip uninstall numpy
 
-sudo pip uninstall numpy
 sudo pip install numpy==1.14.5
           
           
