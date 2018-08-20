@@ -58,8 +58,10 @@ Solution: pip install pillow
 
 Reason: the versions of numpy and scipy don't match
 
-Solution: sudo pip uninstall numpy
-          sudo pip install numpy==1.14.5
+Solution: 
+
+sudo pip uninstall numpy
+sudo pip install numpy==1.14.5
           
           
    python save.pic.py (again) That's OK, there is no warning.
