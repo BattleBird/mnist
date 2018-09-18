@@ -72,5 +72,4 @@ sudo pip install numpy==1.14.5
 # issues
 1.Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
 solution:
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
+import os  os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
