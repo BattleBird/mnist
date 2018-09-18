@@ -41,14 +41,18 @@ Solution: use Chrome(because other browers will uncompress these dataset) to ope
 
 *** [pylint] E0401:Unable to import 'scipy.misc'
 
-Solution: pip install scipy
+Solution: 
+
+pip install scipy
 
 
    python save.pic.py (again)
 
 *** 'module' object has no attribute 'toimage'
 
-Solution: pip install pillow
+Solution: 
+
+pip install pillow
 
 
    python save.pic.py (again)
@@ -58,7 +62,9 @@ Solution: pip install pillow
 
 Reason: the versions of numpy and scipy don't match
 
-Solution: sudo pip uninstall numpy
+Solution: 
+
+sudo pip uninstall numpy
 
 sudo pip install numpy==1.14.5
           
